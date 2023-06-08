@@ -1,0 +1,12 @@
+name: My First GitHub Actions
+
+on:
+  workflow_dispatch
+
+jobs:
+  run_script:
+    runs-on: ['self-hosted','Linux','X64']
+        
+    steps:
+      - name: Run a Script
+        run: bash /home/ubuntu/GitHub/actions-runner/scripts/test.sh
